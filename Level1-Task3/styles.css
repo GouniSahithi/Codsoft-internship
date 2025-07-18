@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background for the page */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    /* Main blue background for the calculator body */
+    background-color: #4CAF50; /* A shade of blue, you can adjust this */
+    background-color: #4CAF50; /* Adjusted to a more standard blue, or choose one like #2196F3 */
+    background-color: #4285F4; /* Google Blue - looks closer to the image */
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px; /* Slightly more padding */
+    width: 320px; /* Slightly wider */
+}
+
+.display {
+    background-color: #ecf0f1; /* Light grey/white background for display */
+    color: #333; /* Dark text for display */
+    font-size: 3em; /* Larger font size */
+    padding: 15px 20px;
+    text-align: right;
+    border-radius: 8px; /* More rounded display corners */
+    margin-bottom: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 12px; /* Slightly more space between buttons */
+}
+
+.button {
+    background-color: #64B5F6; /* Lighter blue for number buttons */
+    color: #fff; /* White text for buttons */
+    border: none;
+    border-radius: 8px; /* Rounded button corners */
+    padding: 22px; /* Larger buttons */
+    font-size: 1.8em; /* Larger font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s; /* Add transform for subtle click effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+}
+
+.button:hover {
+    background-color: #42A5F5; /* Darker blue on hover */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+.button:active {
+    background-color: #2196F3; /* Even darker blue on click */
+    transform: translateY(1px); /* Slight press effect on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for operators, equals, clear */
+/* The first image implies basic buttons, but if you want specific colors
+   for clear/DEL/etc. like in a standard calculator, you can uncomment/adjust these. */
+.button.operator {
+    background-color: #2196F3; /* A vibrant blue for operators */
+}
+
+.button.operator:hover {
+    background-color: #1976D2;
+}
+
+.button.equals {
+    background-color: #1E88E5; /* Another shade of blue for equals */
+    grid-column: span 1;
+}
+
+.button.equals:hover {
+    background-color: #1565C0;
+}
+
+.button.clear {
+    background-color: #FF7043; /* A contrasting color for clear (e.g., orange/red) or keep it blue */
+    /* If you want it blue like the others: */
+    /* background-color: #2196F3; */
+}
+
+.button.clear:hover {
+    background-color: #F4511E;
+}
+
+.button.zero {
+    grid-column: span 2;
+}
