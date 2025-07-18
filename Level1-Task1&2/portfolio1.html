@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .hero-image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+
+    .about-image, .about-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .about-content h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="top-header">
+    <div class="container">
+      <h1 class="site-title">Online Portfolio</h1>
+      <p class="site-tagline">Just another My Blog site</p>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">SKILL</a></li>
+          <li><a href="#">TESTIMONIAL</a></li>
+          <li><a href="#">EXPERIENCE</a></li>
+          <li><a href="#">WORKS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>GOUNI SAHITHI</h2>
+      <p>Hi, I am an undergraduate from Methodist College of Engineering and Technology. I am very interested in web development. I am a very hardworking student.</p>
+      <a href="#" class="btn">Hire Me</a>
+    </div>
+    <div class="hero-image">
+      <img src="my_image.jpg" alt="GOUNI SAHITHI">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="my_image.jpg" alt="GOUNI SAHITHI">
+    </div>
+    <div class="about-content">
+      <h3>ABOUT ME</h3>
+      <p><strong>I Am Undergraduate</strong> in MCET college with an Achievement Topper of academic year and College.</p>
+      <p>I am very hardworking and enthusiastic student who will be graduated in year 2026. My short-term goal is to get a placement with good package. I am very good at skills like C, Python and frameworks like Streamlit, Pandas, scikit-learn, Matplotlib. I am also good at academic subjects like OS, CN, DBMS, DAA. Recently I completed a mini project named AIMOT (AI-Based Monitoring and Optimization of Traffic), where I learned about teamwork and leadership. I love to play with code (^_^)</p>
+      <a href="RESUME.pdf" class="btn">Download Resume</a>
+    </div>
+  </section>
+
+</body>
+</html>
